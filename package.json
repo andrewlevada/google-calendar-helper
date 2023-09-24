@@ -1,0 +1,17 @@
+{
+  "name": "google-calendar-helper",
+  "version": "1.0.0",
+  "main": "./build/bundle.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build-ts && npm run build-rollup",
+    "watch": "npm run build-ts && concurrently \"npm:build-* -- --watch\"",
+    "build-ts": "tsc -p tsconfig.json",
+    "build-rollup": "rollup -c"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "rollup": "^3.26.2",
+    "typescript": "*"
+  }
+}

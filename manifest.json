@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Google Calendar Helper",
+  "version": "1.0",
+  "description": "todo",
+
+  "content_scripts": [
+    {
+      "js": ["build/bundle.js"],
+      "matches": [
+        "https://calendar.google.com/calendar/**/*"
+      ]
+    }
+  ]
+}
